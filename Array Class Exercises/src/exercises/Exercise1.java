@@ -7,3 +7,7 @@ public class Exercise1 {
 		sc.close();
 	}
 }
+/*Crea un programa que pida al usuario dos valores N y M y
+ *luego cree un array de tamaño N que contenga M en todas sus posiciones.
+ *Luego muestra el array por pantalla.
+ */
