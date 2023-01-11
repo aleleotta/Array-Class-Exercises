@@ -3,7 +3,12 @@ import java.util.*;
 
 public class Exercise1 {
 	public static void main(String[] args) {
+		int n, m;
 		Scanner sc = new Scanner(System.in);
+		System.out.print("Introduce the amount of positions in the array: ");
+		n = sc.nextInt();
+		System.out.print("Introduce a number to fill in every array position: ");
+		m = sc.nextInt();
 		sc.close();
 	}
 }
