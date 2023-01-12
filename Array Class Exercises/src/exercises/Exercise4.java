@@ -6,7 +6,7 @@ public class Exercise4 {
 	public static void main(String[] args) {
 		int table[] = new int[30];
 		for(int i = 0; i < table.length ; i++) {
-			table[i] = (Math.random() * 10);
+			table[i] = (int)(Math.random() * 10);
 		}
 		Arrays.sort(table);
 		System.out.println(Arrays.toString(table));
