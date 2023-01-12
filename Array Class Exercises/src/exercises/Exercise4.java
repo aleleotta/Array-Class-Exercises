@@ -1,10 +1,11 @@
 package exercises;
-import java.util.*;
 
 public class Exercise4 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		sc.close();
+		int table[] = new int[30];
+		for(int i = 0; i < table.length ; i++) {
+			table[i] = (Math.random() * 10);
+		}
 	}
 }
 /*Crea un programa que cree un array de tamaño 30 y
