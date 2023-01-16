@@ -9,13 +9,17 @@ public class Exercise5 {
 		for(int i = 0; i < table1.length ; i++) {
 			System.out.print("Please type in a score: ");
 			table1[i] = sc.nextInt();
-			if(table1[i] < 1000 || table1[i] > 2800) {
+			/*if(table1[i] < 1000 || table1[i] > 2800) {
 				table1[i] = 0;
 				i--;
-			}
+			}*/
 		}
 		Arrays.sort(table1);
 		System.out.println(Arrays.toString(table1));
+		for(int i = 0; i < table1.length ; i++) {
+			table2[table2.length-1-i] = table1[i];
+		}
+		System.out.println(Arrays.toString(table2));
 		sc.close();
 	}
 }
