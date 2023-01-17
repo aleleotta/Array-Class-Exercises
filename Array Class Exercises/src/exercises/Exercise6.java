@@ -4,7 +4,7 @@ import java.util.*;
 public class Exercise6 {
 	public static void main(String[] args) {
 		int table[] = new int[1000];
-		int N;
+		int N, counter = 0;
 		Scanner sc = new Scanner(System.in);
 		for(int i = 0; i < table.length ; i++) {
 			table[i] = (int) (Math.random() * 100);
@@ -12,7 +12,12 @@ public class Exercise6 {
 		System.out.println("Array: " + Arrays.toString(table));
 		System.out.print("Introduce a number: ");
 		N = sc.nextInt();
-		if(Arrays.toString(table).contains(N)) {}
+		for(int query: table) {
+			if(query == N) {
+				counter++;
+			}
+		}
+		System.out.println("The following number appeared " + counter + " times in the array.");
 		sc.close();
 	}
 }
