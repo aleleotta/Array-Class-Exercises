@@ -9,7 +9,7 @@ public class Exercise6 {
 		for(int i = 0; i < table.length ; i++) {
 			table[i] = (int) (Math.random() * 100);
 		}
-		System.out.println("Array: " + Arrays.toString(table));
+		//System.out.println("Array: " + Arrays.toString(table)); //For testing purposes.
 		System.out.print("Introduce a number: ");
 		N = sc.nextInt();
 		for(int query: table) {
