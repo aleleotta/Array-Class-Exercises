@@ -10,6 +10,10 @@ public class Exercise7 {
 			table1[i] = (int) (Math.random() * 50) + 1;
 		}
 		System.out.println(Arrays.toString(table1));
+		for(int i = 0; i < table2.length ; i++) {
+			table2[i] = (int) (Math.random() * 50) + 1;
+		}
+		Arrays.sort(table2);
 		System.out.println(Arrays.toString(table2));
 		sc.close();
 	}
