@@ -7,7 +7,7 @@ public class Exercise7 {
 		int table2[] = new int[6];
 		Scanner sc = new Scanner(System.in);
 		for(int i = 0; i < table1.length ; i++) {
-			table1[i] = (int) (Math.random() * (50 - 2));
+			table1[i] = (int) (Math.random() * 50) + 1;
 		}
 		System.out.println(Arrays.toString(table1));
 		sc.close();
