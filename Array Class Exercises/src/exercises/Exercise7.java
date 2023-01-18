@@ -5,6 +5,8 @@ public class Exercise7 {
 	public static void main(String[] args) {
 		int table1[] = new int[6];
 		int table2[] = new int[6];
+		int a, b;
+		int guesses = 0;
 		Scanner sc = new Scanner(System.in);
 		for(int i = 0; i < table1.length ; i++) {
 			table1[i] = (int) (Math.random() * 50) + 1;
@@ -15,6 +17,16 @@ public class Exercise7 {
 		}
 		Arrays.sort(table2);
 		System.out.println(Arrays.toString(table2));
+		for(int query1: table1) {
+			a = query1;
+			for(int query2: table2) {
+				b = query2;
+				if(a == b) {
+					guesses++;
+				}
+			}
+		}
+		System.out.println("Guesses: " + guesses);
 		sc.close();
 	}
 }
